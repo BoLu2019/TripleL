@@ -1,10 +1,10 @@
-<Team Name (without word "team")>
-<Member Bubbles>
-<Member Buttercup>
-<Member Blossom>
-pd <pd#>
+Triple L
+Brian Lin 
+Bo Hui Lu
+William Lu
+pd 8
 ---------------------
-<Project>
+Type Titans
 
 
 
@@ -43,7 +43,8 @@ maybe some of these will move into the Obs.Ovrcm section...
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<wow! oo! etc!...>
+- Key Listeners can be used to detect whether or not a user is pressing a specific key. This
+is commonly used in video games. This is crucial to the project. 
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -70,9 +71,9 @@ LESSONS LEARNED
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
-yyyy-mm-dd
+2018-01-03
 --------------------------------------------------------------
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
+Brian :: Studied the mechanics of Tap Titans as a baseline for Type Titans
+Bo :: Used KtS to map out what topics we have learned in APCS1 that are applicable to Type Titans
+William :: Read up on Key Listeners
 ==============================================================
