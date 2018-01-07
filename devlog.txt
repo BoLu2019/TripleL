@@ -77,3 +77,10 @@ Brian :: Studied the mechanics of Tap Titans as a baseline for Type Titans
 Bo :: Used KtS to map out what topics we have learned in APCS1 that are applicable to Type Titans
 William :: Read up on Key Listeners
 ==============================================================
+
+2018-01-07
+--------------------------------------------------------------
+Brian :: Wrote a finalized version of the proposal. Update devlog
+Bo :: Revised the UML
+William :: Brainstorm names and designs for the game
+==============================================================
