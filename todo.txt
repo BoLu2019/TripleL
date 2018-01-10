@@ -1,0 +1,14 @@
+TripleL (Brian Lin, William Lu, Bo Hui Lu)
+APCS1 pd8
+
+To-do List:
+-Revise uml to make it correct.
+-make flowchart
+-finish this to-do list
+-print the updated uml and flowchart above
+-begin project(in no particuluar order)
+ -Draw the various titans that we will be displaying to the user
+ -Create the different heroes and artifacts that the player will be using.
+ -Make the driver that the player will be interacting with. -
+ 
+   
