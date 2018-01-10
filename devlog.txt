@@ -84,3 +84,12 @@ Brian :: Wrote a finalized version of the proposal. Update devlog
 Bo :: Revised the UML
 William :: Brainstorm names and designs for the game
 ==============================================================
+
+2018-01-09
+--------------------------------------------------------------
+Brian :: Created flowchart. 
+Bo :: Made todo list and updated dev log. 
+William :: Updated uml. 
+==============================================================
+
+
