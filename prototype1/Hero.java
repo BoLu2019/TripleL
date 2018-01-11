@@ -18,6 +18,10 @@ public class Hero {
        return name;
     }
 
+    public int getCost(){
+	return COST;
+    }
+
     public int attack(Titan t) {
        t.lowerHealth(damage);
        return damage;

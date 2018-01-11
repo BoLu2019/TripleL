@@ -4,6 +4,7 @@ public class Titan{
     private int damage;
     private double attackChance;
     private int health;
+    private int prize;
     
     public Titan(){
 
@@ -11,6 +12,7 @@ public class Titan{
         damage = 20;
         attackChance = 0.1;
         health = 1000;
+	prize = 100;
 	
     }
 
@@ -20,6 +22,10 @@ public class Titan{
 
     public String getName(){
         return name;
+    }
+
+    public int getPrize(){
+	return prize;
     }
 
     public int attack(Hero h){
