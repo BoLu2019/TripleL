@@ -32,7 +32,7 @@ Flesh out each category whenever necessary, appropriate.
 ------------------------------------------
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<Wow, we so BOSS bc...>
+-Finally allowed the stages to update after killing the required num of titans.
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -91,5 +91,7 @@ Brian :: Created flowchart.
 Bo :: Made todo list and updated dev log. 
 William :: Updated uml. 
 ==============================================================
-
+2018-01-14
+William :: made all the required files based off uml
+Bo :: Worked on Woo.java and editted Titans/Player.javato make playable game
 
