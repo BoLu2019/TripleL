@@ -35,7 +35,7 @@ public class Woo implements KeyListener{
 	display += "[a: Attack]  [s: Skills]  [h: Heroes]  [i: Inventory]";
 	//Code for displaying player's current gold, damage, and level
 	System.out.println(display);
->>>>>>> a9609ebc320e38a56ab6e51fbb10ab4668b5bb92
+
 		    
     }//ends gameMenu */
 
