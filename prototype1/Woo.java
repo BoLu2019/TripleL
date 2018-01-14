@@ -15,7 +15,7 @@ public class Woo implements KeyListener{
     public Woo(){
         newGame();
     }
-    
+
     public String gameMenu(){
         String display = "";
 
@@ -27,6 +27,15 @@ public class Woo implements KeyListener{
         //Code for displaying player's current gold, damage, and level
 
         return display;
+ /*    public void gameMenu(){
+	String display = "";
+	//Insert code for titan drawings later. Include titan health as well.
+	
+	display += "---- Commands: type appropriate letter and click enter ----\n";
+	display += "[a: Attack]  [s: Skills]  [h: Heroes]  [i: Inventory]";
+	//Code for displaying player's current gold, damage, and level
+	System.out.println(display);
+>>>>>>> a9609ebc320e38a56ab6e51fbb10ab4668b5bb92
 		    
     }//ends gameMenu */
 
