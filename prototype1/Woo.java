@@ -17,22 +17,16 @@ public class Woo {
     
  /*    public void gameMenu(){
 	String display = "";
-
 	//Insert code for titan drawings later. Include titan health as well.
-
 	
 	display += "---- Commands: type appropriate letter and click enter ----\n";
 	display += "[a: Attack]  [s: Skills]  [h: Heroes]  [i: Inventory]";
 	//Code for displaying player's current gold, damage, and level
-
 	System.out.println(display);
 		    
-
     }//ends gameMenu */
 
     //Keylistener stuff
-<<<<<<< HEAD
-=======
     
     public void newGame(){
         
@@ -52,7 +46,6 @@ public class Woo {
         
         
     }
->>>>>>> f8eed387cdbd5705387f940fba90267a8d70fa77
 
 
 
