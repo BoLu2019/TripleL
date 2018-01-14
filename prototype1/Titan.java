@@ -41,7 +41,7 @@ public class Titan{
     }
 
     public String toString(){
-        return "This is a Titan.";
+        return "This is a Titan with health " + health;
     }
 
 }
