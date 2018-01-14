@@ -33,6 +33,18 @@ public class Player {
         return name;
     }
 
+    public int getGold(){
+        return gold;
+    }
+
+    public int getRelics(){
+        return relics;
+    }
+
+    public int getDamage(){
+        return damage;
+    }
+
     public void levelUp(){
         level ++;
     }
@@ -80,6 +92,7 @@ public class Player {
     }
     
     public int attack(Titan t) {
+	
         t.lowerHealth(damage);
         return damage;
     }
@@ -91,7 +104,7 @@ public class Player {
     }
 
     public String toString(){
-        return "This is a player.";
+        return getName();
     }
     
 }
