@@ -18,6 +18,10 @@ public class Artifact{
         return name;
     }
     
+    public int getCost(){
+        return COST;
+    }
+    
     public void upgrade(){
         level ++;
     }

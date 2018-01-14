@@ -12,7 +12,7 @@ public class Titan{
         damage = 20;
         attackChance = 0.1;
         health = 1000;
-	prize = 100;
+        prize = 100;
 	
     }
 
@@ -28,9 +28,9 @@ public class Titan{
 	return prize;
     }
 
-    public int attack(Hero h){
+    public int attack(Player p){
         if (Math.random() < attackChance){
-            h.lowerHealth(damage);
+            p.getAttacked(damage);
             return damage;
         }
         return 0;
