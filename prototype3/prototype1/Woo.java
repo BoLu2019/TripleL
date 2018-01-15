@@ -50,14 +50,14 @@ public class Woo {
 	//for fighting a titan
 	while( t.isAlive() ){
 	    
-	    System.out.println("[Stage] : "+ stage);
-	    System.out.println("[Titan Health] : " +  t.getHealth());
-	    System.out.println("[Gold] : " + p.getGold());
+	    System.out.println("[Stage] : " + stage + "\n");
+	    System.out.println("[Titan Health] : " +  t.getHealth() + "\n");
+	    System.out.println("[Gold] : " + p.getGold() + "\n");
 	    System.out.println(display+"\n");
 
 	    String command = Keyboard.readString();
 	    if(command.equals("a")){
-		System.out.println("\n\n\n\n\n\n\n\n\n\nDealt " + p.attack(t)+ "damage!" + "\n");
+		System.out.println("\n\n\nDealt " + p.attack(t)+ " Damage!" + "\n");
 	    }
 
 	}
@@ -87,7 +87,7 @@ public class Woo {
 	    while(titans<5){
 		if(! w.playGame()){
 		    titans++;
-		    System.out.println(titans+"/5 titans left");
+		    System.out.println(titans + "/5 Titans Left");
 		}
 	    }
 	    w.advanceStage();
