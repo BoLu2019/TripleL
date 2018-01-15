@@ -45,6 +45,10 @@ public class Player {
         return damage;
     }
 
+    public int getLevel(){
+	return level;
+    }
+    
     public void levelUp(){
         level ++;
     }

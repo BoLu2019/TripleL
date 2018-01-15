@@ -4,14 +4,14 @@ public class Hero {
     private int damage;
     private int level;
     private int health;
-    private final int COST;
+    private int cost;
 
     public Hero() {
        name = "Hero";
        damage = 1;
        level = 1;
        health = 200;
-       COST = 50;
+       cost = 50;
     }
 
     public String getName() {
@@ -19,9 +19,13 @@ public class Hero {
     }
 
     public int getCost(){
-	return COST;
+	return cost;
     }
 
+    public int getLevel() {
+	return level;
+    }
+    
     public int attack(Titan t) {
        t.lowerHealth(damage);
        return damage;
