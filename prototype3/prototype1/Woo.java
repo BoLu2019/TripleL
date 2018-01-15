@@ -1,7 +1,8 @@
 import cs1.Keyboard;
 import java.util.Scanner;
+import java.util.ArrayList;
 
-public class Woo {
+public class Woo{
 
     /*
       For displaying the screen that the player sees after running Woo.
@@ -31,8 +32,6 @@ public class Woo {
 
         System.out.println("Welcome to Type Titans.\nHow do you call yourself, adventurer?");
         p = new Player(Keyboard.readString());
-
-
 	//Insert code for titan drawings later. Include titan health as well.
 
        
@@ -43,8 +42,21 @@ public class Woo {
     }//ends newGame()
 
     public boolean playGame(){
-	String display = "---- Commands: type appropriate letter for desired command. ----\n"+
-	                 "[a: Attack]  [s: Skills]  [h: Heroes]  [i: Inventory]";
+	Brown brown = new Brown();
+	AAron aaron = new AAron();
+	Beach beach = new Beach();
+	Holmes holmes = new Holmes();
+	Clyde clyde = new Clyde();
+
+	
+	String display = "---- Commands: type appropriate letter for desired command. ----\n" +
+	    "[a: Attack]  [s: Skills]  [h: Heroes]  [i: Inventory]";
+	String heroesDisplay = "------- Heroes ------------------ Cost ------ Key\n" + 
+	    "*** " + brown.getName() + ": " + "          " + brown.getCost() + " G " + "       <1> ***\n" +
+	    "*** " + aaron.getName() + ": " + "            " + aaron.getCost() + " G " + "       <2> ***\n" +
+	    "*** " + beach.getName() + ": " + "       " + beach.getCost() + " G " + "       <3> ***\n" +
+	    "*** " + holmes.getName() + ": " + "      " + holmes.getCost() + " G " + "       <4> ***\n" +
+	    "*** " + clyde.getName() + ": " + "          " + clyde.getCost() + " G " + "       <5> ***\n";
 	t = new Titan(stage);
 
 	//for fighting a titan
@@ -59,7 +71,31 @@ public class Woo {
 	    if(command.equals("a")){
 		System.out.println("\n\n\nDealt " + p.attack(t)+ " Damage!" + "\n");
 	    }
-
+	    if(command.equals("h")){
+	    	System.out.println(heroesDisplay);
+		System.out.println("Press the Number Key For the Hero you want to Hire:");
+		int purchase = Keyboard.readInt();
+		if(purchase == 1) {
+		    p.buyHero(brown);
+		    System.out.println("\n");
+		}
+		if(purchase == 2) {
+		    p.buyHero(aaron);
+		    System.out.println("\n");
+		}
+		if(purchase == 3) {
+		    p.buyHero(beach);
+		    System.out.println("\n");
+		}
+		if(purchase == 4) {
+		    p.buyHero(holmes);
+		    System.out.println("\n");
+		}
+		if(purchase == 5) {
+		    p.buyHero(clyde);
+		    System.out.println("\n");
+		}
+	    }
 	}
 
 	System.out.println("GJ, he ded");
@@ -84,7 +120,7 @@ public class Woo {
 	
 	while(w.getStage() < 1000){
 	    int titans = 0;	
-	    while(titans<5){
+	    while(titans<6){
 		if(! w.playGame()){
 		    titans++;
 		    System.out.println(titans + "/5 Titans Left");

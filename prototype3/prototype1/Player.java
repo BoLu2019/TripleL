@@ -63,7 +63,7 @@ public class Player {
             artifacts.add(a);
             System.out.println("You have purchased " + a.getName());
         } else {
-            System.out.println("Purchase failed: you need " + a.getCost() + " gold.");
+            System.out.println("Purchase failed: you need " + (a.getCost() - relics) + " more relics.");
         }
     }
 
@@ -73,7 +73,7 @@ public class Player {
             heroes.add(h);
             System.out.println("You have purchased " + h.getName());
         } else {
-            System.out.println("Purchase failed: you need " + h.getCost() + " gold.");
+            System.out.println("Purchase failed: Need " + (h.getCost() - gold) + " more gold.");
         }
     }
 
@@ -84,10 +84,10 @@ public class Player {
                 skills.add(s);
                 System.out.println("You have purchased " + s.getName());
             } else {
-                System.out.println("Purchase failed: you need " + s.getCost() + " gold.");
+                System.out.println("Purchase Failed: Need " + (s.getCost() - gold) + " more gold.");
             }
         } else {
-            System.out.println("Purchase failed: need to reach level " + s.getUnlockLevel() + ".");
+            System.out.println("Purchase failed: Need to reach Level " + s.getUnlockLevel() + ".");
         }
     }
     
