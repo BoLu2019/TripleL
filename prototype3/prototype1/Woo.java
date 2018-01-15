@@ -58,7 +58,7 @@ public class Woo{
 	    "*** " + holmes.getName() + ": " + "      " + holmes.getCost() + " G " + "       <4> ***\n" +
 	    "*** " + clyde.getName() + ": " + "          " + clyde.getCost() + " G " + "       <5> ***\n";
 	t = new Titan(stage);
-
+	String skillsDisplay = "";
 	//for fighting a titan
 	while( t.isAlive() ){
 	    
