@@ -4,7 +4,7 @@ public class Skill{
     private int cooldown;
     private int unlockLevel;
     private int level;
-    private int COST;
+    private final int COST;
 
     public Skill(){
 

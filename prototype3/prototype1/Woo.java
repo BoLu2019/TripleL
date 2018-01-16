@@ -51,12 +51,12 @@ public class Woo{
 	
 	String display = "---- Commands: type appropriate letter for desired command. ----\n" +
 	    "[a: Attack]  [s: Skills]  [h: Heroes]  [i: Inventory]";
-	String heroesDisplay = "------- Heroes ------------------ Cost ------ Key\n" + 
-	    "*** " + brown.getName() + ": " + "          " + brown.getCost() + " G " + "       <1> ***\n" +
-	    "*** " + aaron.getName() + ": " + "            " + aaron.getCost() + " G " + "       <2> ***\n" +
-	    "*** " + beach.getName() + ": " + "       " + beach.getCost() + " G " + "       <3> ***\n" +
-	    "*** " + holmes.getName() + ": " + "      " + holmes.getCost() + " G " + "       <4> ***\n" +
-	    "*** " + clyde.getName() + ": " + "          " + clyde.getCost() + " G " + "       <5> ***\n";
+	String heroesDisplay = "----------- Heroes ------------------ Cost ------ Key\n" + 
+	    "*** " + brown.getName() + ": Lv" + brown.getLevel() + "          " + brown.getCost() + " G " + "       <1> ***\n" +
+	    "*** " + aaron.getName() + ": Lv" + aaron.getLevel() + "            " + aaron.getCost() + " G " + "       <2> ***\n" +
+	    "*** " + beach.getName() + ": Lv" + beach.getLevel() + "       " + beach.getCost() + " G " + "       <3> ***\n" +
+	    "*** " + holmes.getName() + ": Lv" + holmes.getLevel() + "      " + holmes.getCost() + " G " + "       <4> ***\n" +
+	    "*** " + clyde.getName() + ": Lv" + clyde.getLevel() + "          " + clyde.getCost() + " G " + "       <5> ***\n";
 	t = new Titan(stage);
 	String skillsDisplay = "";
 	//for fighting a titan
