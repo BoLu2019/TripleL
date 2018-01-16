@@ -33,6 +33,9 @@ Flesh out each category whenever necessary, appropriate.
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -Finally allowed the stages to update after killing the required num of titans.
+-Made timers work for our skills.
+
+
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,8 +46,8 @@ maybe some of these will move into the Obs.Ovrcm section...
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- Key Listeners can be used to detect whether or not a user is pressing a specific key. This
-is commonly used in video games. This is crucial to the project. 
+-timers(adding delays for skills)
+
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -91,7 +94,15 @@ Brian :: Created flowchart.
 Bo :: Made todo list and updated dev log. 
 William :: Updated uml. 
 ==============================================================
+
 2018-01-14
+--------------------------------------------------------------
 William :: made all the required files based off uml
 Bo :: Worked on Woo.java and editted Titans/Player.javato make playable game
+==============================================================
 
+2018-01-15
+--------------------------------------------------------------
+Brian :: Created all the hero clases and added skills
+Bo :: Cleaned up folders. Began artifacts
+==============================================================
