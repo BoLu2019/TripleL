@@ -4,7 +4,7 @@ public class Player {
 
     private String name; 
     private int damage;
-    private int gold;
+    public int gold;
     private int relics;
     private int level;
     private int prestige;
@@ -12,7 +12,7 @@ public class Player {
     private ArrayList<Skill> skills;
     private ArrayList<Hero> heroes;
 
-    public Player() {
+    public Player( int damage, int relics, int prestige, ArrayList<Artifact> artifacts) {
         name = "Destroyer of World";
         damage = 1;
         gold = 0;

@@ -29,7 +29,6 @@ public class Woo{
 
     
     public void newGame(){
-
         System.out.println("Welcome to Type Titans.\nHow do you call yourself, adventurer?");
         p = new Player(Keyboard.readString());
 	//Insert code for titan drawings later. Include titan health as well.
