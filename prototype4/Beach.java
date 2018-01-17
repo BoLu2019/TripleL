@@ -5,7 +5,7 @@ public class Beach extends Hero {
         damage = 30;
         level = 1;
         health = 305;
-        cost = 800;
+        cost = 175;
         levelUpCost = 150;
     }
 

@@ -32,12 +32,13 @@ public class Woo{
 	prestige++;
     }
 
-    
+    int counter = 1;
     public void newGame(Woo woo){
         System.out.println("Welcome to Type Titans.\nHow do you call yourself, adventurer?");
 	String name = Keyboard.readString();
 	if(prestige>0){
-	    p = new Player(name,1,0,prestige);
+		counter *= 2;
+	    p = new Player(name, counter, prestige);
 	}
 	else{
 	    p = new Player(name);
@@ -52,6 +53,7 @@ public class Woo{
 		}
 	    }
 	    woo.advanceStage();
+		p.levelUp();
 	}
        
         
@@ -64,24 +66,34 @@ public class Woo{
 	Beach beach = new Beach();
 	Holmes holmes = new Holmes();
 	Clyde clyde = new Clyde();
-
+	HeavenlyStrike hs = new HeavenlyStrike();
+	ShadowClone sc = new ShadowClone();
+	BerserkerRage br = new BerserkerRage();
+	HandsOfMidas hom = new HandsOfMidas();
 	
 	String display = "---- Commands: type appropriate letter for desired command. ----\n" +
-	    "[a: Attack]  [s: Skills]  [h: Heroes]  [i: Inventory]";
-	String heroesDisplay = "----------- Heroes ------------------ Cost ------ Key\n" + 
+	    "[a: Attack]  [s: Skills]  [h: Heroes]";
+	String heroesDisplay = "------- Heroes ------------------ Cost ------ Key\n" + 
 	    "*** " + brown.getName() + ": Lv" + brown.getLevel() + "          " + brown.getCost() + " G " + "       <1> ***\n" +
 	    "*** " + aaron.getName() + ": Lv" + aaron.getLevel() + "            " + aaron.getCost() + " G " + "       <2> ***\n" +
 	    "*** " + beach.getName() + ": Lv" + beach.getLevel() + "       " + beach.getCost() + " G " + "       <3> ***\n" +
 	    "*** " + holmes.getName() + ": Lv" + holmes.getLevel() + "      " + holmes.getCost() + " G " + "       <4> ***\n" +
 	    "*** " + clyde.getName() + ": Lv" + clyde.getLevel() + "          " + clyde.getCost() + " G " + "       <5> ***\n";
+		
+	String skillsDisplay = "------- Skills --------- Cost -------- Key\n" + 
+	    "*** " + hs.getName() + "      " + hs.getCost() + " G " + "       <1> ***\n" +
+	    "*** " + sc.getName() + "        " + sc.getCost() + " G " + "       <2> ***\n" +
+	    "*** " + br.getName() + "      " + br.getCost() + " G " + "       <3> ***\n" +
+	    "*** " + hom.getName() + "      " + hom.getCost() + " G " + "       <4> ***\n";
+		
 	t = new Titan(stage);
-	String skillsDisplay = "";
 	//for fighting a titan
 	while( t.isAlive() ){
 	    
 	    System.out.println("[Stage] : " + stage + "\n");
 	    System.out.println("[Titan Health] : " +  t.getHealth() + "\n");
 	    System.out.println("[Gold] : " + p.getGold() + "\n");
+		System.out.println("[Level] : " + p.getLevel() + "\n");
 	    System.out.println(display+"\n");
 
 	    String command = Keyboard.readString();
@@ -113,6 +125,29 @@ public class Woo{
 		    System.out.println("\n");
 		}
 	    }
+		
+		if (command.equals("s")) {
+			System.out.println(skillsDisplay);
+			System.out.println("Press the Number Key for the Skill you want to Keep:");
+		int purchase = Keyboard.readInt();
+		if(purchase == 1) {
+		    p.buySkill(hs);
+		    System.out.println("\n");
+			hs.activate(p, t);
+		}
+		if(purchase == 2) {
+		    p.buySkill(sc);
+		    System.out.println("\n");
+		}
+		if(purchase == 3) {
+		    p.buySkill(br);
+		    System.out.println("\n");
+		}
+		if(purchase == 4) {
+		    p.buySkill(hom);
+		    System.out.println("\n");
+		}
+		}
 	}
 
 	System.out.println("GJ, he ded");

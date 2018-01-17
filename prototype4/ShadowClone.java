@@ -10,9 +10,6 @@ public class ShadowClone extends Skill {
     private final int COST;
     public boolean isDown;
 
-    public int secondsPassed = 0;
-    
-
     public ShadowClone(){
 	name = "Shadow Clone";
 	cooldown = 20;
@@ -39,27 +36,24 @@ public class ShadowClone extends Skill {
     }
     
     public void activate(Player p, Titan t){
-        ShadowClone timer = new ShadowClone();
-	timer.start();
-	while (secondsPassed <= 15) {
-	    isDown = false;
-	    t.lowerHealth(p.getDamage());
-	    if (secondsPassed == 15) {
-		isDown = true;
-		try {
-		    Thread.sleep(cooldown * 1000);
-		}
-		catch(InterruptedException ex) {
-		    Thread.currentThread().interrupt();
-		}
-		secondsPassed = 0;
-	    }
+		Timer time = new Timer();
+		time.scheduleAtFixedRate(
+			new TimerTask()
+			{
+				public void run()
+				{
+					System.out.println("SHANK: YOUR CLONE DEALT AN EXTRA HIT!" );
+					t.lowerHealth(p.getDamage());
+			}
+		},
+		0,
+		5000);
 	}
-
+/*
     public static void activate(Player p, Titan t){
         p.attack(t);
-
     }
+*/
 
     public void deactivate(Player p){
     }
@@ -68,17 +62,6 @@ public class ShadowClone extends Skill {
         return "This is a Skill.";
     }
 
-    Timer myTimer = new Timer();
-    TimerTask task = new TimerTask() {
-	    public void run() {
-		secondsPassed++;
-	    }
-	};
-    
-    public void start() {
-	myTimer.scheduleAtFixedRate(task,1000,1000);
-    }
-    
     public static void main(String[] args) {
     }
 }

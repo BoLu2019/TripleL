@@ -5,7 +5,7 @@ public class Holmes extends Hero {
 	damage = 100;
 	level = 1;
 	health = 975;
-	cost = 2500;
+	cost = 245;
     levelUpCost = 200;
     }
 

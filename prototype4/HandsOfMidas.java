@@ -9,13 +9,11 @@ public class HandsOfMidas extends Skill {
     private final int COST;
     public boolean isDown;
 
-    public int secondsPassed = 0;
-    
     public HandsOfMidas(){
 	name = "Hands of Midas";
-	cooldown = 60;
+	cooldown = 40;
 	unlockLevel = 20;
-	COST = 800;
+	COST = 300;
     }
 
     public String getName(){
@@ -35,22 +33,18 @@ public class HandsOfMidas extends Skill {
     }
     
     public void activate(Player p, Titan t){
-        HandsOfMidas timer = new HandsOfMidas();
-	timer.start();
-	while (secondsPassed <= 15) {
-	    isDown = false;
-	    p.gold += (t.getPrize() * 2);
-	    if (secondsPassed == 15) {
-		isDown = true;
-		try {
-		    Thread.sleep(cooldown * 1000);
-		}
-		catch(InterruptedException ex) {
-		    Thread.currentThread().interrupt();
-		}
-		secondsPassed = 0;
-	    }
-	}
+		Timer time = new Timer();
+		time.scheduleAtFixedRate(
+			new TimerTask()
+			{
+				public void run()
+				{
+					System.out.println("$$__$$ I'M RICH!");
+					p.gold += (t.getPrize() * 2);
+			}
+		},
+		0,
+		8000);
     }
 
     public void deactivate(Player p){
@@ -60,16 +54,6 @@ public class HandsOfMidas extends Skill {
 	return "This is a Skill.";
     }
 
-    Timer myTimer = new Timer();
-    TimerTask task = new TimerTask() {
-	    public void run() {
-		secondsPassed++;
-	    }
-	};
-    public void start() {
-	myTimer.scheduleAtFixedRate(task,1000,1000);
-    }
-    
     public static void main(String[] args) {
     }
 }

@@ -58,14 +58,6 @@ public class Titan{
 	return prize;
     }
 
-    public int attack(Player p){
-        if (Math.random() < attackChance){
-            p.getAttacked(damage);
-            return damage;
-        }
-        return 0;
-    }
-
     public void lowerHealth(int dmg){
         health -= dmg;
     }

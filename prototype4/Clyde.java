@@ -5,7 +5,7 @@ public class Clyde extends Hero {
 	damage = 500;
 	level = 1;
 	health = 5000;
-	cost = 10000;
+	cost = 300;
 	levelUpCost = 500;
     }
 

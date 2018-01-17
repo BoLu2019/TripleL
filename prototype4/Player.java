@@ -5,10 +5,8 @@ public class Player {
     private String name; 
     private int damage;
     public int gold;
-    private int relics;
     private int level;
     private int prestige;
-    private ArrayList<Artifact> artifacts;
     private ArrayList<Skill> skills;
     private ArrayList<Hero> heroes;
 
@@ -16,10 +14,8 @@ public class Player {
         name = "Destroyer of World";
         damage = 1;
         gold = 0;
-        relics = 0;
         level = 1;
         prestige = 0;
-        artifacts = new ArrayList<Artifact>();
         skills = new ArrayList<Skill>();
         heroes = new ArrayList<Hero>();
     }
@@ -31,12 +27,11 @@ public class Player {
     }
     
     //Instantiates new player with updated player's stats -- for prestige usage.
-    public Player(String givenName, int damage, int relics, int prestige){
+    public Player(String givenName, int damage, int prestige){
         this();
         name = givenName;
-	damage = damage;
-	relics = relics;
-	prestige = prestige;
+		damage = damage;
+		prestige = prestige;
 	
     }
 
@@ -48,11 +43,6 @@ public class Player {
     //accessor get getting gold #
     public int getGold(){
         return gold;
-    }
-
-    //accessor for getting # relics
-    public int getRelics(){
-        return relics;
     }
 
     //accessor for getting dmg of player
@@ -87,29 +77,6 @@ public class Player {
     public void addGold(int amt){
         gold += amt;
     }
-
-    //increases player's relic count
-    public void addRelics(int amt){
-        relics += amt;
-    }
-
-  
-    //allows player to buy artifacts given he/she has enough relics
-    public void buyArtifact(Artifact a){
-        if (relics >= a.getCost()){
-            relics -= a.getCost();
-            artifacts.add(a);
-            System.out.println("You have purchased " + a.getName());
-        } else {
-            System.out.println("Purchase failed: you need " + (a.getCost() - relics) + " more relics.");
-        }
-    }
-
-
-
-
-
-
     
     //allows player to buy heroes if they have enough gold
     public void buyHero(Hero h){
