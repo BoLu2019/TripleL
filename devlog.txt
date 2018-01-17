@@ -7,42 +7,19 @@ pd 8
 Type Titans
 
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-USAGE:
-* Replace all fields, angle brackets included, with specified info.
-  eg, pd <pd#> --> pd 3
-* Delete these instructions once all teammates understand usage.
-  (from tilde bar above to tilde bar below)
-
-devlog--
-Use keyboard shortcut to jump to end,
- replicate entry template,
- modify appropriately.
-
-zone of reflection--
-Flesh out each category whenever necessary, appropriate.
- Need not be fully filled in until end of project,
- but best done as you go along.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
 /////////// Zone of Reflection \\\\\\\\\\\
 ------------------------------------------
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -Finally allowed the stages to update after killing the required num of titans.
 -Made timers work for our skills.
-
-
+-Allowed for prestige mechanic that resets everything except, it also boosts stats.
+-Made skills work!
+-Allowed heroes to be leveled.
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-<
-blah blah pesky bug...
-maybe some of these will move into the Obs.Ovrcm section...
->
+-Keylisteners still confuse us, and we didn't use it for this verison.
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -51,13 +28,15 @@ COOL STUFF LEARNED
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We changed ___ to ___ bc...
-<etc>
-<etc>
-
+-Changed original purpose of prestige(to give more resources to allow buying random items), to just that of boosting player's stats.
+-Removed artifacts(due to changed prestige), for our version of the game. 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <tales of wisdom gained...>
+-starting early would be a great idea
+-Organizing workload between 3 people is harder than most of us thought.
+-GitHub is way more useful than we had thought.
+
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
@@ -104,5 +83,21 @@ Bo :: Worked on Woo.java and editted Titans/Player.javato make playable game
 2018-01-15
 --------------------------------------------------------------
 Brian :: Created all the hero clases and added skills
-Bo :: Cleaned up folders. Began artifacts
+Bo :: Cleaned up folders. Began artifacts. Due to time constraints, removed artifacts from
+our version of the game.
+==============================================================
+
+2018-01-16
+--------------------------------------------------------------
+Brian :: Finalized uml and flowcharts.
+Bo :: Editted files to remove uneeded functionality.
+William :: Helped polish uml/flowcharts, as well as answering questions we had. He helped 
+to plan the splitting of work b/w us today.
+==============================================================
+
+2018-01-17(Lesson learned, start much much earlier)
+--------------------------------------------------------------
+Brian :: Added prestige to the game. Spent a lot of time fixing skills, and editting display.
+Bo :: Allowed heroes to level up to increase player damage. Edited woo.java to allowed game 
+to be played from a method.
 ==============================================================
