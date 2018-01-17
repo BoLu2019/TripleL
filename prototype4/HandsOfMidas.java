@@ -1,9 +1,8 @@
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class ShadowClone extends Skill {
+public class HandsOfMidas extends Skill {
 
-<<<<<<< HEAD
     private String name;
     private int cooldown;
     private int unlockLevel;
@@ -12,17 +11,13 @@ public class ShadowClone extends Skill {
 
     public int secondsPassed = 0;
     
-=======
->>>>>>> e3807850490aec98e24a01f7b1265d3403460af0
-    public ShadowClone(){
-	name = "Shadow Clone";
-	cooldown = 20;
-	unlockLevel = 10;
-	COST = 150;
-	isDown = false;
+    public HandsOfMidas(){
+	name = "Hands of Midas";
+	cooldown = 60;
+	unlockLevel = 20;
+	COST = 800;
     }
 
-<<<<<<< HEAD
     public String getName(){
 	return name;
     }
@@ -34,17 +29,17 @@ public class ShadowClone extends Skill {
     public int getUnlockLevel(){
 	return unlockLevel;
     }
-    
+
     public boolean getDown(){
 	return isDown;
     }
     
     public void activate(Player p, Titan t){
-        ShadowClone timer = new ShadowClone();
+        HandsOfMidas timer = new HandsOfMidas();
 	timer.start();
 	while (secondsPassed <= 15) {
 	    isDown = false;
-	    t.lowerHealth(p.getDamage());
+	    p.gold += (t.getPrize() * 2);
 	    if (secondsPassed == 15) {
 		isDown = true;
 		try {
@@ -56,17 +51,13 @@ public class ShadowClone extends Skill {
 		secondsPassed = 0;
 	    }
 	}
-=======
-    public static void activate(Player p, Titan t){
-        p.attack(t);
->>>>>>> e3807850490aec98e24a01f7b1265d3403460af0
     }
 
     public void deactivate(Player p){
     }
 
     public String toString(){
-        return "This is a Skill.";
+	return "This is a Skill.";
     }
 
     Timer myTimer = new Timer();
@@ -75,7 +66,6 @@ public class ShadowClone extends Skill {
 		secondsPassed++;
 	    }
 	};
-    
     public void start() {
 	myTimer.scheduleAtFixedRate(task,1000,1000);
     }
