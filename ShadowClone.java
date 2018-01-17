@@ -18,23 +18,23 @@ public class ShadowClone extends Skill {
 	isDown = false;
     }
 
-
+	//accessor for skill name
     public String getName(){
 	return name;
     }
-
+	//accessor for skill cost
     public int getCost(){
 	return COST;
     }
-
+ 	//accessor for skill's unlock level.
     public int getUnlockLevel(){
 	return unlockLevel;
     }
-    
+    //accessor for if skill is down or not
     public boolean getDown(){
 	return isDown;
     }
-    
+    //activates skil based on time intervals set
     public void activate(Player p, Titan t){
 		Timer time = new Timer();
 		time.scheduleAtFixedRate(

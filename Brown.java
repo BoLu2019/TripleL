@@ -1,5 +1,6 @@
 public class Brown extends Hero {
     
+	//setting proper stats for the hero Brown
     public Brown() {
 	name = "Brown the Wanderer";
 	damage = 3;
@@ -8,7 +9,7 @@ public class Brown extends Hero {
 	cost = 25;
 	levelUpCost = 25;
     }
-
+    //adding conditionals for proper scaling of damage.
     public void levelUp() {
 	level ++;
 	if (level <= 10) {

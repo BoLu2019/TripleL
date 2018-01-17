@@ -25,13 +25,14 @@ public class Titan{
         prize = (int)(health * 0.008 + 0.002 * min(stage,150 ))+ 10 ;
 	
     }
-
+	//helper method for computing titan health and prize scalings
     public int max(int x, int y){
 	if(x>y){
 	    return x;
 	}
 	return y;
     }
+	//helper method for computing titan health and prize scalings
     public int min(int x, int y){
 	if(x<0)
 	    return y;
@@ -40,24 +41,24 @@ public class Titan{
 	}
 	return y;
     }
-
+	//boolean for is Titan dead/alive
     public boolean isAlive(){
         return health > 0;
     }
-
+	//accessor for getting titan's name
     public String getName(){
         return name;
     }
-    
+  	//accessor for getting titan's health  
     public int getHealth(){
         return health;
     }
 
-
+	//accessor for getting gold reward from killing titan
     public int getPrize(){
 	return prize;
     }
-
+	//mutator to kill the titan
     public void lowerHealth(int dmg){
         health -= dmg;
     }

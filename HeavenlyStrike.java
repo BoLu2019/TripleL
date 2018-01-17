@@ -19,23 +19,23 @@ public class HeavenlyStrike extends Skill {
 	
     }
 
-
+	//accessor for getting skill name
     public String getName(){
 	return name;
     }
-
+	//accessor for getting cost of skill
     public int getCost(){
 	return COST;
     }
-
+	//accessor for getting unlock level
     public int getUnlockLevel(){
 	return unlockLevel;
     }
-
+	//accessor for whether skill is down
     public boolean getDown(){
 	return isDown;
     }
-    
+    //activates the skill based on set time intervals
     public void activate(Player p, Titan t){
 	Timer time = new Timer();
 	time.scheduleAtFixedRate(
@@ -58,6 +58,7 @@ public class HeavenlyStrike extends Skill {
 
     }
 */
+	//stops skill
     public void deactivate(Player p){
     }
 

@@ -136,7 +136,7 @@ public class Player {
     }
 
     
-    /*   
+    /*   Removed this function
 	 public void getAttacked(int dmg){
 	 if (! heroes.isEmpty()){
 	 heroes.get((int) (Math.random() * heroes.size())).lowerHealth(dmg);

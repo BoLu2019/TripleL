@@ -1,5 +1,6 @@
 public class AAron extends Hero {
     
+    //setting stats for the hero AAron
     public AAron() {
 	name = "AAron the Thief";
 	damage = 10;
@@ -9,6 +10,7 @@ public class AAron extends Hero {
 	levelUpCost = 50;
     }
 
+    //adding conditionals for proper scaling of damage.
     public void levelUp() {
 	level ++;
 	if (level <= 10) {

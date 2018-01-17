@@ -15,23 +15,29 @@ public class Woo{
     private int stage;
     private int prestige;
     
+	//sets beginning to stage 1
     public Woo(){
 	// newGame();
 	stage = 1;
     }
 
+		//accessor for  getting current
     public int getStage(){
 	return stage;
     }
 
+	//advances the player to the next stage
     public void advanceStage(){
 	stage++;	
     }
-
+	//increase prestige count
     public void prestige(){
 	prestige++;
     }
 
+
+	//method for beginning a new game of Type Titans, instantiates player based off prestige count. Makes game 
+	progress through stages.
     int counter = 1;
     public void newGame(Woo woo){
         System.out.println("Welcome to Type Titans.\nHow do you call yourself, adventurer?");
@@ -60,6 +66,8 @@ public class Woo{
 		    
     }//ends newGame()
 
+	//method for displaying text to interact with user as they play the game, to guide them. Allows user
+	interaction with our game.
     public boolean playGame(){
 	Brown brown = new Brown();
 	AAron aaron = new AAron();
@@ -159,14 +167,14 @@ public class Woo{
     }//end playGame()
 
     
-    
+    //one tap is one attack on the titan
     public void tap(){
         p.attack(t);
     }
     
     public static void main(String[] args){
 
-
+	
         Woo w = new Woo();
 	w.newGame(w);
 	//for making the game run

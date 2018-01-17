@@ -1,5 +1,5 @@
 public class Holmes extends Hero {
-    
+    //sets stats for the hero Holmes
     public Holmes() {
 	name = "Holmes the Detective";
 	damage = 100;
@@ -9,7 +9,7 @@ public class Holmes extends Hero {
     levelUpCost = 200;
     }
 
-
+	//adds conditionals for the levelUp for proper damage scaling
     public void levelUp() {
 	level ++;
 	if (level <= 10) {

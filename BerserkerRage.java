@@ -7,7 +7,7 @@ public class BerserkerRage extends Skill {
     private int cooldown;
     private int unlockLevel;
     private final int COST;
-    public boolean isDown;
+    public boolean isDown; //is skill active or not
     
     public BerserkerRage(){
 	name = "Berserker Rage";
@@ -16,22 +16,24 @@ public class BerserkerRage extends Skill {
 	COST = 210;
     }
 
+	//accessor for skill's name
     public String getName(){
 	return name;
     }
-
+	//accessor for cost of skill
     public int getCost(){
 	return COST;
     }
-
+	//accessor for unlockLevel
     public int getUnlockLevel(){
 	return unlockLevel;
     }
-
+	//returns where or not skill is down
     public boolean getDown(){
 	return isDown;
     }
     
+	//activate skill, includes timer for intervals of skill usage
     public void activate(Player p, Titan t){
 		Timer time = new Timer();
 		time.scheduleAtFixedRate(
@@ -46,7 +48,7 @@ public class BerserkerRage extends Skill {
 		0,
 		10000);
 	}
-
+	//stops skill
     public void deactivate(Player p){
     }
 

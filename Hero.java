@@ -15,33 +15,33 @@ public class Hero  {
        cost = 50;
        levelUpCost = 20;
     }
-
+ //accessor for hero name
     public String getName() {
        return name;
     }
-
+	//accessor for cost of hero
     public int getCost(){
 	return cost;
     }
-
+	//accessor for get hero's level up cost
     public int getLevelUpCost(){
 	return levelUpCost;
     }
-
+	//accessor for getting hero's level
     public int getLevel() {
 	return level;
     }
-    
+    //tells hero to attack, returns damage dealt
     public int attack(Titan t) {
        t.lowerHealth(damage);
        return damage;
     }
-
+	//levels up the hero
     public void levelUp() {
        level ++;
     }
     
-
+	//not used for our version anymore	
     public void lowerHealth(int dmg) {
        health -= dmg;
     }

@@ -1,5 +1,5 @@
 public class Beach extends Hero {
-
+	//setting proper stats for the hero Beach
     public Beach() {
         name = "Beach the Enthusiast";
         damage = 30;
@@ -9,6 +9,7 @@ public class Beach extends Hero {
         levelUpCost = 150;
     }
 
+    //adding conditionals for proper scaling of damage.
     public void levelUp() {
 	level ++;
 	if (level <= 10) {

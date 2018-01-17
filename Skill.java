@@ -15,26 +15,26 @@ public class Skill{
 	isDown = false;
 
     }
-
+ //accessor for skill name
     public String getName(){
 	return name;
     }
-
+	//accessor for cost of skill
     public int getCost(){
 	return COST;
     }
-
+	//accessor for unlock level of skill
     public int getUnlockLevel(){
 	return unlockLevel;
     }
-
+	//accessor for if skill is down or not
     public boolean getDown(){
 	return isDown;
     }
-    
+    //activates skill
     public void activate(Player p){
     }
-
+	//deactivates skill
     public void deactivate(Player p){
     }
 

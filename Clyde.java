@@ -1,5 +1,6 @@
 public class Clyde extends Hero {
 
+	//setting proper stats for the hero Clyde
     public Clyde() {
 	name = "Clyde the Bride";
 	damage = 500;
@@ -8,7 +9,7 @@ public class Clyde extends Hero {
 	cost = 300;
 	levelUpCost = 500;
     }
-
+    //adding conditionals for proper scaling of damage.
     public void levelUp() {
 	level ++;
 	if (level <= 10) {
