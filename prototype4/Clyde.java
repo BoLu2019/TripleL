@@ -6,7 +6,7 @@ public class Clyde extends Hero {
 	level = 1;
 	health = 5000;
 	cost = 10000;
-    levelUpCost = 500
+	levelUpCost = 500;
     }
 
     public void levelUp() {

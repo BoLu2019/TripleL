@@ -6,7 +6,7 @@ public class Beach extends Hero {
         level = 1;
         health = 305;
         cost = 800;
-        levelUpCost = 150
+        levelUpCost = 150;
     }
 
     public void levelUp() {

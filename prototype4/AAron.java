@@ -6,7 +6,7 @@ public class AAron extends Hero {
 	level = 1;
 	health = 105;
 	cost = 100;
-    levelUpCost = 50
+	levelUpCost = 50;
     }
 
     public void levelUp() {
