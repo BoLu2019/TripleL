@@ -14,7 +14,7 @@ public class Player {
 
     public Player() {
         name = "Destroyer of World";
-        damage = 1 + ;
+        damage = 1;
         gold = 0;
         relics = 0;
         level = 1;
