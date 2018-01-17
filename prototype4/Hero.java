@@ -1,11 +1,11 @@
 public class Hero {
 
-    private String name;
-    private int damage;
-    private int level;
-    private int health;
-    private int cost;
-    private int levelUpCost;
+    public String name;
+    public int damage;
+    public int level;
+    public int health;
+    public int cost;
+    public int levelUpCost;
 
     public Hero() {
        name = "Hero";
