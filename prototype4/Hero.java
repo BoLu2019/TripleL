@@ -5,6 +5,7 @@ public class Hero {
     private int level;
     private int health;
     private int cost;
+    private int levelUpCost;
 
     public Hero() {
        name = "Hero";
@@ -12,6 +13,7 @@ public class Hero {
        level = 1;
        health = 200;
        cost = 50;
+       levelUpCost = 20;
     }
 
     public String getName() {
@@ -20,6 +22,10 @@ public class Hero {
 
     public int getCost(){
 	return cost;
+    }
+
+    public int getLevelUpCost(){
+	return levelUpCost;
     }
 
     public int getLevel() {
@@ -31,7 +37,7 @@ public class Hero {
        return damage;
     }
 
-    public void levelUp() {
+    public void levelUp(Player p) {
        level ++;
     }
 
@@ -39,7 +45,12 @@ public class Hero {
        health -= dmg;
     }
 
-    public String toString() {
-       return "This is a Hero.";
+    public String toString(){
+	String s = name;
+	s += "\nHealth: " + health;
+	s += "\nLevel: " + level;
+	s += "\ndamage: " + damage;
+    s += "\nneed " + levelUpCost + " gold to level up";
+	return s;
     }
 }
