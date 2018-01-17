@@ -1,9 +1,8 @@
-public class Skill{
+public abstract class Skill{
 
     private String name;
     private int cooldown;
     private int unlockLevel;
-    private int level;
     private final int COST;
 
     public Skill(){
@@ -11,7 +10,6 @@ public class Skill{
 	name = "Skill";
 	cooldown = 10;
 	unlockLevel = 5;
-	level = 1;
 	COST = 50;
 
     }
@@ -28,15 +26,9 @@ public class Skill{
 	return unlockLevel;
     }
 
-    public void levelUp(){
-	level ++;
-    }
+    public abstract void activate(Player p);
 
-    public void activate(Player p){
-    }
-
-    public void deactivate(Player p){
-    }
+    public abstract void deactivate(Player p);
 
     public String toString(){
 	return "This is a Skill.";
