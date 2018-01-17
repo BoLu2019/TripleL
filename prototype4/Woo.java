@@ -13,9 +13,10 @@ public class Woo{
     private Player p;
     private Titan t;
     private int stage;
+    private int prestige;
     
     public Woo(){
-        newGame();
+	// newGame();
 	stage = 1;
     }
 
@@ -24,19 +25,36 @@ public class Woo{
     }
 
     public void advanceStage(){
-	stage++;
+	stage++;	
+    }
+
+    public void prestige(){
+	prestige++;
     }
 
     
-    public void newGame(){
+    public void newGame(Woo woo){
         System.out.println("Welcome to Type Titans.\nHow do you call yourself, adventurer?");
-        p = new Player(Keyboard.readString());
-	//Insert code for titan drawings later. Include titan health as well.
-
-       
-
+	String name = Keyboard.readString();
+	if(prestige>0){
+	    p = new Player(name,1,0,prestige);
+	}
+	else{
+	    p = new Player(name);
+	}
 	
-	//Code for displaying player's current gold, damage, and level
+	while(woo.getStage() < 1000){
+	    int titans = 0;	
+	    while(titans<6){
+		if(! woo.playGame()){
+		    titans++;
+		    System.out.println(titans + "/5 Titans Left");
+		}
+	    }
+	    woo.advanceStage();
+	}
+       
+        
 		    
     }//ends newGame()
 
@@ -115,8 +133,9 @@ public class Woo{
 
 
         Woo w = new Woo();
+	w.newGame(w);
 	//for making the game run
-	
+	/*	
 	while(w.getStage() < 1000){
 	    int titans = 0;	
 	    while(titans<6){
@@ -127,7 +146,7 @@ public class Woo{
 	    }
 	    w.advanceStage();
 	}
-
+	*/
         
     }
 

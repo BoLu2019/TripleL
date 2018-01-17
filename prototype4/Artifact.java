@@ -3,14 +3,13 @@ public class Artifact{
     private String name;
     private int level;
     private final int COST;
-    private final int UPGRADECOST;
+
     
     public Artifact(){
         
         name = "Artifact";
-        level = 1;
+        level = 999;
         COST = 30;
-        UPGRADECOST = 20;
         
     }
     
@@ -22,16 +21,9 @@ public class Artifact{
         return COST;
     }
     
-    public void upgrade(){
-        level ++;
-    }
-    
-/*     public void equip(Player p){
-        p.increaseDamage(1)
-    } */
     
     public String toString(){
-        return "This is an Artifat.";
+        return "This is an Artifact.";
     }
     
 }

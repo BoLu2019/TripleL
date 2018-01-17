@@ -3,7 +3,7 @@ import java.util.TimerTask;
 
 public class ShadowClone extends Skill {
 
-<<<<<<< HEAD
+
     private String name;
     private int cooldown;
     private int unlockLevel;
@@ -12,8 +12,7 @@ public class ShadowClone extends Skill {
 
     public int secondsPassed = 0;
     
-=======
->>>>>>> e3807850490aec98e24a01f7b1265d3403460af0
+
     public ShadowClone(){
 	name = "Shadow Clone";
 	cooldown = 20;
@@ -22,7 +21,7 @@ public class ShadowClone extends Skill {
 	isDown = false;
     }
 
-<<<<<<< HEAD
+
     public String getName(){
 	return name;
     }
@@ -56,10 +55,10 @@ public class ShadowClone extends Skill {
 		secondsPassed = 0;
 	    }
 	}
-=======
+
     public static void activate(Player p, Titan t){
         p.attack(t);
->>>>>>> e3807850490aec98e24a01f7b1265d3403460af0
+
     }
 
     public void deactivate(Player p){

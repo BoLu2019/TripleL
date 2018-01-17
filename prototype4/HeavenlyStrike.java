@@ -11,9 +11,7 @@ public class HeavenlyStrike extends Skill {
     public boolean isDown;
 
     public int secondsPassed = 0;
-    
-=======
->>>>>>> e3807850490aec98e24a01f7b1265d3403460af0
+
     public HeavenlyStrike(){
 
 	name = "Heavenly Strike";
@@ -24,7 +22,7 @@ public class HeavenlyStrike extends Skill {
 	
     }
 
-<<<<<<< HEAD
+
     public String getName(){
 	return name;
     }
@@ -48,12 +46,12 @@ public class HeavenlyStrike extends Skill {
 	while (secondsPassed < cooldown) {
 	    isDown = true;
 	}
-=======
+
     public void activate(Player p, Titan t){
         for (int i = 0; i < 70 * p.getLevel(); i ++){
             p.attack(t);
         }
->>>>>>> e3807850490aec98e24a01f7b1265d3403460af0
+
     }
 
     public void deactivate(Player p){

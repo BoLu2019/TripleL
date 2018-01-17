@@ -1,4 +1,4 @@
-public class Hero {
+public class Hero  {
 
     public String name;
     public int damage;
@@ -37,9 +37,10 @@ public class Hero {
        return damage;
     }
 
-    public void levelUp(Player p) {
+    public void levelUp() {
        level ++;
     }
+    
 
     public void lowerHealth(int dmg) {
        health -= dmg;
@@ -53,4 +54,12 @@ public class Hero {
     s += "\nneed " + levelUpCost + " gold to level up";
 	return s;
     }
+
+    /*
+    public int compareTo(Hero h){
+	return this.getName() - h.getName();	
+    }
+    */
+
+
 }
