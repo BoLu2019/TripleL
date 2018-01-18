@@ -36,8 +36,7 @@ public class Woo{
     }
 
 
-	//method for beginning a new game of Type Titans, instantiates player based off prestige count. Makes game 
-	progress through stages.
+	//method for beginning a new game of Type Titans, instantiates player based off prestige count. Makes game progress through stages.
     int counter = 1;
     public void newGame(Woo woo){
         System.out.println("Welcome to Type Titans.\nHow do you call yourself, adventurer?");
@@ -66,8 +65,7 @@ public class Woo{
 		    
     }//ends newGame()
 
-	//method for displaying text to interact with user as they play the game, to guide them. Allows user
-	interaction with our game.
+	//method for displaying text to interact with user as they play the game, to guide them. Allows user interaction with our game.
     public boolean playGame(){
 	Brown brown = new Brown();
 	AAron aaron = new AAron();
